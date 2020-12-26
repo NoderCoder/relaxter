@@ -25,7 +25,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         ),
         Container(
           color: Colors.blueAccent,
-            child: Image(image: AssetImage(logo),))
+            child: Image(image: AssetImage(logo),),),
+        Container(
+          color: Colors.pinkAccent,
+          child: Icon(
+            FontAwesomeIcons.filePdf,
+            size: 200,
+          ),
+        ),
       ],
     );
   }
