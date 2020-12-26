@@ -14,26 +14,36 @@ class OnboardingScreen extends StatefulWidget {
 class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          color: Colors.pinkAccent,
-          child: Icon(
-            FontAwesomeIcons.sass,
-            size: 200,
+    return SafeArea(
+      child: Column(
+        children: [
+          Container(
+            color: Colors.pinkAccent,
+            child: Icon(
+              FontAwesomeIcons.sass,
+              size: 50,
+            ),
           ),
-        ),
-        Container(
-          color: Colors.blueAccent,
-            child: Image(image: AssetImage(logo),),),
-        Container(
-          color: Colors.pinkAccent,
-          child: Icon(
-            FontAwesomeIcons.filePdf,
-            size: 200,
+          Container(
+            color: Colors.blueAccent,
+              child: Image(image: AssetImage(logo),),),
+          Container(
+            color: Colors.pinkAccent,
+            child: Icon(
+              FontAwesomeIcons.filePdf,
+              size: 50,
+            ),
           ),
-        ),
-      ],
+          Container(
+            color: Colors.pinkAccent,
+            child: Icon(
+              FontAwesomeIcons.addressCard,
+              size: 50
+              ,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
