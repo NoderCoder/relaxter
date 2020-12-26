@@ -42,6 +42,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               ,
             ),
           ),
+          Container(
+            color: Colors.pinkAccent,
+            child: Icon(
+              FontAwesomeIcons.fan,
+              size: 50
+              ,
+            ),
+          ),
         ],
       ),
     );
